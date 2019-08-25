@@ -1,0 +1,25 @@
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+const config = {
+    apiKey: 'AIzaSyBMpaA7IzqDUYxj34vqC6sy8pdXaE8NXko',
+    authDomain: 'crwn-db-dea92.firebaseapp.com',
+    databaseURL: 'https://crwn-db-dea92.firebaseio.com',
+    projectId: 'crwn-db-dea92',
+    storageBucket: '',
+    messagingSenderId: '787848256961',
+    appId: '1:787848256961:web:ad02810a2f334085'
+};
+
+firebase.initializeApp(config);
+
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
+
+const provider = new firebase.auth.GoogleAuthProvider();
+provider.setCustomParameters({ prompt: 'select_account' });
+
+export const signInWithGoogle = () => auth.signInWithPopup(provider);
+
+export default firebase;
