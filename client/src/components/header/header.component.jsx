@@ -21,6 +21,13 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
             <Logo className='logo' />
         </LogoContainer>
         <OptionsContainer>
+            <a
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://github.com/komjenic/crwn'
+            >
+                SOURCE CODE
+            </a>
             <OptionLink to='/shop'>SHOP</OptionLink>
             <OptionLink to='/contact'>CONTACT</OptionLink>
             {currentUser ? (
