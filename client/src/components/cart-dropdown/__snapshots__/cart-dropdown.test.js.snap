@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render CartDropdown component 1`] = `
+<ForwardRef(styled.div)>
+  <ForwardRef(styled.div)>
+    <ForwardRef(styled.span)>
+      Your cart is empty
+    </ForwardRef(styled.span)>
+  </ForwardRef(styled.div)>
+  <ForwardRef(Styled(CustomButton))
+    onClick={[Function]}
+  >
+    GO TO CHECKOUT
+  </ForwardRef(Styled(CustomButton))>
+</ForwardRef(styled.div)>
+`;
